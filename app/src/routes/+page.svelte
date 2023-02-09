@@ -1,2 +1,9 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+    import ThumbtackFactory from "./components/ThumbtackFactory.svelte";
+    import Terminal from "./components/Terminal.svelte"
+</script>
+
+<div class="m-2">
+    <Terminal/>
+    <ThumbtackFactory/>
+</div>
