@@ -1,2 +1,2 @@
 # thumbtacks
-A "Universal Paperclips" clone
+"Universal Paperclips"-inspired, simple, incremental browser game
