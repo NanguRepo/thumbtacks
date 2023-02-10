@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    h1 {
+        @apply text-3xl font-bold
+    }
+    .button {
+        @apply w-fit h-fit bg-neutral-200 rounded p-1 active:bg-neutral-400 hover:bg-neutral-300 disabled:hover:bg-neutral-200 dark:text-white dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:active:bg-neutral-600 dark:disabled:hover:bg-neutral-800 outline outline-1 outline-neutral-600;
+    }
+}
