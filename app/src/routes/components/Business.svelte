@@ -2,15 +2,15 @@
 	import { thumbtackCount, money, tackPrice } from './stores';
 	const sell = () => {
 		if ($thumbtackCount != 0) {
-            $thumbtackCount--;
-            $money += $tackPrice;
+			$thumbtackCount--;
+			$money += $tackPrice;
 		}
-        setTimeout(sell, 10000*$tackPrice)
+		setTimeout(sell, 10000000 ** $tackPrice);
 	};
-    sell();
+	sell();
 </script>
 
-<h1 class="underline">Business</h1>
+<h2>Business</h2>
 <p>Available funds: ₱{$money.toFixed(2)}</p>
 <p>Unsold thumbtacks: {$thumbtackCount}</p>
 <div class="flex flex-row gap-1 items-center">
