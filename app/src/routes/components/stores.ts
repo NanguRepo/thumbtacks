@@ -12,6 +12,7 @@ export interface stock {
 	available: upgrade[];
 }
 
+export const cheatsEnabled = writable(false);
 export const lifetimeThumbtacks = writable(0);
 export const thumbtackCount = writable(0);
 export const childLaborCount = writable(0);

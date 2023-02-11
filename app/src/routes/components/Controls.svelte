@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { lifetimeThumbtacks, thumbtackCount, childLaborCount } from './stores';
+	import { lifetimeThumbtacks, thumbtackCount, childLaborCount, cheatsEnabled } from './stores';
 	import Business from './Business.svelte';
 	import Factory from './Factory.svelte';
 	import Upgrades from './Upgrades.svelte';
@@ -20,6 +20,11 @@
 	doChildLabor();
 </script>
 
+{#if $cheatsEnabled}
+	<div class="rounded px-2 py-1 w-fit bg-red-400 text-white">
+		<p>⚠️CHEATS ENABLED⚠️</p>
+	</div>
+{/if}
 <h1>Thumbtacks: {$lifetimeThumbtacks}</h1>
 <button class="button" on:click={makeThumbtack}>Make thumbtack</button>
 
